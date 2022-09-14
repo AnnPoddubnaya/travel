@@ -154,8 +154,6 @@ img[current2].classList.remove('opacity');
 }
 slider2();
 
-
-
 arrowL.addEventListener('click', function(){
 	if(current2 - 1 === - 1){
 		current2 = img.length - 1;
