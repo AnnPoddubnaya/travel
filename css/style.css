@@ -535,15 +535,18 @@ html {
             align-items: flex-end;
     width: 106px;
     height: 176px;
-    padding: 44px 15px 30px 44px;
+    padding: 30px 0 0 0 ;
     row-gap: 10px;
   }
 }
-@media (max-width: 26.5625rem) and (max-width: 20rem) {
+@media (max-width: 26.5625rem) {
   .nav__list {
-    padding: 44px 15px 30px 30px;
+    padding: 44px 0 0 44px;
+    align-items: start;
   }
+
 }
+
 @media (max-width: 26.5625rem) {
   .nav__link {
     font-family: "Red Hat Text";
@@ -563,6 +566,39 @@ html {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+  }
+}
+@media (max-width: 23.4375rem)  {
+  .nav__list {
+    padding: 30px 0 0 0;
+  }
+}
+@media (max-width: 23.4375rem) {
+  .nav__link {
+  
+    font-size: 13px;
+
+  }
+}
+@media (max-width: 23.4375rem) {
+  .nav__link_burger, .nav__link_burger-account {
+  
+    font-size: 13px;
+   
+  }
+}
+@media (max-width: 20rem) {
+  .nav__link {
+  
+    font-size: 11px;
+
+  }
+}
+@media (max-width: 20rem) {
+  .nav__link_burger, .nav__link_burger-account {
+  
+    font-size: 11px;
+   
   }
 }
 @media (max-width: 26.5625rem) {
@@ -1508,14 +1544,20 @@ html {
 @media (max-width: 24.375rem) {
   .slider__elipses {
     top: 250px;
-    left: 165px;
+    left: 170px;
     width: 36px;
     height: 8px;
     position: absolute;
     gap: 6px;
   }
 }
-
+@media (max-width: 20rem) {
+  .slider__elipses {
+  
+    left: 145px;
+    
+  }
+}
 .slider__elipse_left {
   width: 20px;
   height: 20px;
@@ -1679,7 +1721,7 @@ width: 20rem;
 	  height: 30px;
 	  padding: 0rem 0rem 0rem 0rem;
 	  background: #0D606F url("../travel/img/main/destinations/arrow-right.svg") 11px 9px no-repeat;
-	  margin: 2.5px 0 0 0;
+	  margin: 2.5px 0 0 -0.25rem;
 	}
  }
 @media (max-width: 24.375rem) {
@@ -1690,11 +1732,26 @@ width: 20rem;
     left: 135px;
     width: 92px;
     height: 30px;
-    padding: 0.3rem 0.75rem 0.4rem 1.75rem;
+    padding: 0.3rem 0.75rem 0.4rem 1rem;
     background: #0D606F url("../travel/img/main/destinations/arrow-right.svg") 11px 9px no-repeat;
-    margin: 2.5px 0 0 0;
+    margin: 2.5px 0 0 0.5rem;
   }
 }
+@media (max-width: 20rem){
+  .destinations__button {
+    position: absolute;
+    z-index: 11;
+    top: 290px;
+    left: 135px;
+    width: 92px;
+    height: 30px;
+    padding: 0.3rem 0.75rem 0.4rem 1rem;
+    background: #0D606F url(../travel/img/main/destinations/arrow-right.svg) 11px 9px no-repeat;
+    margin: 2.5px 0 0 -1.2rem;
+}
+}
+
+
 .destinations__button:hover {
   background-color: #31a3b8;
   -webkit-transition-duration: 0.7s;
