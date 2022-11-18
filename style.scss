@@ -64,10 +64,8 @@ html {
 }
 .main {
 	flex: 1 1 auto;
-	
-
-
 }
+
 /* ------------------------------ */
 [class*="__container"] {
 	max-width: 90rem;
@@ -1189,11 +1187,11 @@ line-height: 0.75rem;
 
 		/* .slider__elipse_active */
 
-		&_active {
+		&_center {
 			width: 20px;
 			height: 20px;
 			border-radius: 50%;
-			background: #F2785C;
+			background: rgba(242, 120, 92, 0.5);
 			@media (max-width: 24.375rem) {
 				width: 8px;
 				height: 8px;
@@ -1214,8 +1212,7 @@ line-height: 0.75rem;
 		}
 	}
 }
-.active {
-}
+
 
 .destinations {
 max-width: 1440px;

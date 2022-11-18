@@ -35,7 +35,7 @@ const popup = document.querySelector('.pop-up');
 const button = document.querySelector('.header__button');
 
 
-console.log(button);
+// console.log(button);
 button.addEventListener('click', function(){
 	popup.classList.remove('hidden');
 	bg.classList.add('active-color');
@@ -107,6 +107,7 @@ buttonAccount.addEventListener('click', function(){
 // -----------slider-deskopt
 
 let images = document.querySelectorAll('.slider__item');
+// console.log(images);
 let current = 0;
 const arrowRight = document.querySelector('.slider__arrow-right');
 const arrowLeft = document.querySelector('.slider__arrow-left');
@@ -127,6 +128,7 @@ arrowRight.addEventListener('click', function () {
 		current++;
 	}
 	slider();
+	chengeColorPots();
 });
 
 arrowLeft.addEventListener('click', function () {
@@ -136,8 +138,9 @@ arrowLeft.addEventListener('click', function () {
 		current--;
 	}
 	slider();
-
+    chengeColorPots();
 });
+
 
 
 //--------slider-mob
@@ -161,6 +164,7 @@ arrowL.addEventListener('click', function(){
 		current2--;
 	}
 	slider2();
+	chengeColorPots();
 });
 
 arrowR.addEventListener('click', function(){
@@ -170,5 +174,19 @@ arrowR.addEventListener('click', function(){
 current2++;
 	}
 	slider2();
+	chengeColorPots();
 });
 
+
+//-------pots---------------------------------------------------
+
+const pots = document.querySelectorAll('.slider__elipse');
+console.log(pots);
+
+function chengeColorPots(){
+	for(let i = 0; i < pots.length; i++){
+		pots[i].classList.remove('active');
+	}
+	pots[current].classList.add('active');
+}
+chengeColorPots();
